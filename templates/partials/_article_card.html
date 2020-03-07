@@ -1,0 +1,5 @@
+<div class="card bg-dark">
+    <h6 class="card-title bg-dark">{{article.title}}</h6>
+    <img src="{{url_for('static', filename=article.thumbnail_path)}}" class="card-img-top">
+    <a href="/article/{{article.article_id}}" class="stretched-link"></a>
+</div>

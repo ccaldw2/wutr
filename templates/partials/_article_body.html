@@ -1,0 +1,43 @@
+<div class="container article-body">
+    {% for segment in article.segments %}
+        {% if segment.context == 'heading' %}
+        <div class="row">
+            <div class="col">
+                <h3>{{segment.content}}</h3>
+            </div>
+        </div>
+
+        {% elif segment.context == 'paragraph' %}
+        <div class="row">
+            <div class="col">
+                <p>{{segment.content}}</p>
+            </div>
+        </div>
+
+        {% elif segment.context == 'image' %}
+        <div class="row">
+            <div class="col">
+                <img 
+                    src="{{url_for('static', filename=segment.content)}}"
+                    class="img-fluid"
+                >
+            </div>
+        </div>
+
+        {% elif segment.context == 'quote' %}
+        <div class="row">
+            <div class="col">
+                <blockquote>{{segment.content}}</blockquote>
+            </div>
+        </div>
+
+        {% else %}
+        <div class="row">
+            <div class="col">
+                <p><em>This section of the article cannot be displayed</em></p>
+            </div>
+        </div>
+        
+        {% endif %}
+    {% endfor %}
+</div>

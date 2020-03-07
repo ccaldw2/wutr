@@ -1,0 +1,16 @@
+
+<script src="{{ url_for('static', filename='config/particles.js') }}"></script>
+<script>
+    
+    particlesJS.load('particles-js', "{{ url_for('static', filename='config/particles-config.json') }}", function() {
+    console.log('callback - particles.js config loaded');
+});
+</script>
+
+<div 
+    class="jumbotron text-center center" 
+    id="homepage-jumbotron"
+    style="margin: 0; padding: 0;">
+    <h1 id="homepage-title">Western University Technology Review</h1>
+    <div id="particles-js"></div>
+</div>

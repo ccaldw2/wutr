@@ -1,0 +1,63 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+
+  background-color: #23232a;
+  color: white;
+}
+
+a{
+  color: #c33e01;
+}
+
+footer{
+  margin-top: 5%;
+  padding: 2%;
+  border-top: 1px solid #505050;
+}
+
+a:hover{
+  color: #f7783e
+}
+#homepage-jumbotron{
+  position: relative;
+  background-color: #23232a;
+}
+
+#homepage-title{
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 90%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+  margin: 5%;
+}
+
+#particles-js{
+  height: 60vh;
+  width: 100%;
+}
+
+.dropdown-item.bg-dark{
+  color: white;
+}
+
+.card{
+  position: relative;
+  text-align: center;
+}
+
+.card-title{
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  padding: 2%;
+  width: 100%;
+  margin: 0;
+}
+
+
+.card:hover{
+  color: #c33e01;
+}
